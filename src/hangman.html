@@ -42,7 +42,8 @@
                 </tr>
             </table>
         </div>
-        <form><input type="text" id="userGuessInput"></form>
+        <input type="text" id="userGuessInput"/>
+        <form onkeypress="return event.keyCode != 13"><input type="text" id="userGuessInput"></form>
         <button onclick="getUserGuess()">Enter</button>
         <p id="demo"></p>
     </body>

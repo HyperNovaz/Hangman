@@ -23,3 +23,7 @@ function checkGuess(guess){
 function removeCharacter(charId){
     document.getElementById(charId).innerHTML = "_";
 }
+
+$('form').keypress(function(event) { 
+    return event.keyCode != 13;
+}); 
