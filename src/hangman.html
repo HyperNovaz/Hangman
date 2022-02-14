@@ -3,6 +3,8 @@
     <script src="main.js"></script>
     <body>
         <p1>Hangman</p1>
+        <br>
+        <img src="./Images/HangmanFull.png">
         <div class="letter-table">
             <table>
                 <tr>
@@ -42,8 +44,7 @@
                 </tr>
             </table>
         </div>
-        <input type="text" id="userGuessInput"/>
-        <form onkeypress="return event.keyCode != 13"><input type="text" id="userGuessInput"></form>
+        <input type="text" id="userGuessInput" onkeydown="userKeypress(e)"/>
         <button onclick="getUserGuess()">Enter</button>
         <p id="demo"></p>
     </body>

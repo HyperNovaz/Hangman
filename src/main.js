@@ -24,6 +24,6 @@ function removeCharacter(charId){
     document.getElementById(charId).innerHTML = "_";
 }
 
-$('form').keypress(function(event) { 
-    return event.keyCode != 13;
-}); 
+function userKeypress(e){
+    console.log(e);
+}
