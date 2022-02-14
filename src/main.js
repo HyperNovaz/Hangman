@@ -30,3 +30,18 @@ function removeCharacter(charId){
 function userKeypress(e){
     console.log(e);
 }
+
+function createBlanks(numLetters){
+    const newTable = document.createElement("table");
+    const newTableRow = document.createElement("tr");
+    const newContent, newTableData;
+    for(let i = 0; i < numLetters; i++){
+        newTableData = document.createElement("td");
+        newContent = document.createTextNode("_");
+        newTableData.appendChild(newContent);
+        newTableRow.appendChild(newTableData);
+    }
+    newTable.appendChild(newTableRow);
+    const currentTable = document.getElementById("letter-table");
+    document.body.insertBefore(newTable, currentTable);
+}
