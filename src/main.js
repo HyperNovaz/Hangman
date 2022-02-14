@@ -17,6 +17,9 @@ function checkGuess(guess){
     if(guess == "humor"){
         return true;
     }
+    else{
+        document.getElementById("stickmanImage").src = "./Images/Hangman1.png";
+    }
     return false;
 }
 
